@@ -1,59 +1,47 @@
+# 📊 Portfolio Optimizer
 
-# 📊 Portfolio Optimizer & Risk Analyzer
-
-A Python + Streamlit-based dashboard to simulate, optimize, and analyze stock portfolios using Modern Portfolio Theory and advanced risk metrics.
-
-## 🚀 Features
-- 🔧 Portfolio Optimization (Max Sharpe & Min Volatility)
-- 📈 Custom Weights Input with full performance evaluation
-- 📉 Risk Metrics: Sharpe Ratio, Sortino Ratio, Jensen’s Alpha, VaR, Max Drawdown
-- 📊 Efficient Frontier Plot, VaR Histogram, Correlation/Covariance Heatmaps
-- 💡 Real-time interactive dashboard built with Streamlit
-
-## 📁 Folder Structure
-```
-portfolio-optimizer/
-├── app.py              # Streamlit frontend interface
-├── main.py             # Portfolio logic and analytics
-├── outputs/            # Generated plots (heatmaps, charts)
-├── requirements.txt    # Dependencies
-└── README.md           # This file
-```
-
-## 💻 How to Run
-
-1. Clone the repo:
-```bash
-git clone https://github.com/Parth-282/portfolio-optimizer.git
-cd portfolio-optimizer
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the app:
-```bash
-streamlit run app.py
-```
-
-## 📸 Screenshots
-*(Add screenshots of the Efficient Frontier, metric outputs, and heatmaps here)*
-
-## 🧠 Built With
-- `streamlit` – Web app UI
-- `pandas`, `numpy` – Data manipulation
-- `matplotlib`, `seaborn` – Plotting
-- `yfinance` – Stock data API
-- `scipy` – Optimization solver
-- `pillow` – Image handling
-
-## ✍️ Author
-**Parth Bansal**  
-[LinkedIn →](https://www.linkedin.com/in/parth-bansal-25b6561a5)
+A powerful Streamlit-based web application for optimizing stock portfolios and analyzing their risk using Modern Portfolio Theory and financial metrics.
 
 ---
 
-> 🎓 This project was built as part of my learning in finance, data analysis, and Python programming. It showcases a full workflow from data acquisition to risk-adjusted performance reporting.
+## 🚀 What You Can Do
+
+- ✅ Select Indian stocks (NSE-listed)
+- 📈 Simulate thousands of portfolios (Monte Carlo method)
+- 🧠 Optimize for **Maximum Sharpe Ratio** or **Minimum Volatility**
+- 📉 Analyze:
+  - Correlation and Covariance matrices
+  - VaR (Value at Risk) – 95% & 99%
+  - Sortino Ratio
+  - Jensen’s Alpha
+  - Portfolio Beta (vs NIFTY)
+  - Max Drawdown
+- 🎯 Input **custom weights** and evaluate full metrics
+- 📊 View interactive plots + download Excel reports (optional)
+
+---
+
+## 📸 Sample Outputs (from `/outputs`)
+- `correlation_matrix.png` – Correlation Heatmap
+- `covariance_matrix.png` – Covariance Heatmap
+- `efficient_frontier.png` – Efficient Frontier Plot
+- `Max Sharpe_var_histogram.png` – VaR Histogram
+- `Min Volatility_var_histogram.png` – VaR Histogram
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3.10+**
+- [Streamlit](https://streamlit.io/) – Web app framework
+- [yFinance](https://pypi.org/project/yfinance/) – Stock data
+- **NumPy, Pandas, SciPy** – Data and math
+- **Seaborn, Matplotlib** – Visualizations
+- **Pillow** – Image handling
+
+---
+
+## 📁 Project Structure
+
+
 
